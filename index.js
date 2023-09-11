@@ -27,6 +27,7 @@ app.get('/api', (req, res) => {
     const apiEndpoint = 'https://ikquilibrium-sg.github.io/project-1/api'
 
     const fullUrl = `${apiEndpoint}?slack_name=${responseJson.slack_name}&track=${responseJson.track}`
+    res.send(fullUrl)
 })
 
 
