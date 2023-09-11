@@ -24,7 +24,7 @@ app.get('/api', (req, res) => {
 
     res.json(responseJson)
 
-    const apiEndpoint = 'https://ikquilibrium-sg.github.io/project-1/api'
+    const apiEndpoint = 'https://curious-lolly-3ece45.netlify.app/api'
 
     const fullUrl = `${apiEndpoint}?slack_name=${responseJson.slack_name}&track=${responseJson.track}`
     res.send(fullUrl)
